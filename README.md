@@ -1,24 +1,49 @@
-# README
+# Rails 5 Sample App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+Required ruby and rails versions as below:
 
-* Ruby version
+```
+Rails: '5.2.3'
+```
 
-* System dependencies
+```
+Ruby: '2.6.3'
+```
 
-* Configuration
+## Clone Repository
 
-* Database creation
+```
+git clone https://github.com/nitinkadam25/rails_5_sample_app.git
+```
 
-* Database initialization
+## Access Repository
 
-* How to run the test suite
+```
+cd rails_5_sample_app
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Install Gems
 
-* Deployment instructions
+```
+bundle install
+```
 
-* ...
+## Database configuration
+
+1. Add username and password in application.yml file to access database of PostgreSQL.
+2. Create Database and run migration
+   ```
+   rake db:create && rake db:migrate
+   ```
+
+## Access rails application
+1. Run below command in terminal
+   ```
+   rails s
+   ```
+2. Access application using localhost in web browser
+   ```
+   http://localhost:3000/
+   ```
