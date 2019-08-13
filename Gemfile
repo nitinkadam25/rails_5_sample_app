@@ -37,14 +37,20 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 # To store environment variables
 gem 'figaro', '~> 1.1', '>= 1.1.1'
-# A Ruby static code analyzer and formatter
-gem 'rubocop', '~> 0.74.0', require: false
-# A tool to manage and configure Git hooks
-gem 'overcommit'
+# A static analysis security vulnerability scanner for Ruby on Rails applications
+gem 'brakeman', '~> 3.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # A Ruby static code analyzer and formatter
+  gem 'rubocop', '~> 0.74.0', require: false
+  # A tool to manage and configure Git hooks
+  gem 'overcommit'
+  # A code metric tool for rails codes, written in Ruby.
+  gem 'rails_best_practices', '~> 1.15', '>= 1.15.7'
+  # Reek is a tool that examines Ruby classes, modules and methods and reports any code smells it finds.
+  gem 'reek'
 end
 
 group :development do
