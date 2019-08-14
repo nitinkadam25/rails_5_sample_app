@@ -12,4 +12,7 @@ FrozenStringLiteralComment:
   Enabled: false
 
 Documentation:
-    Enabled: false
+  Enabled: false
+
+Layout/Tab:
+  Enabled: false
